@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Es una narración breve que consiste en el relato de un suceso de pura invención?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Cuento.
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Leyenda
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Refrán.
+                    </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Adivinanza.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Elige la frase escrita con adjetivos: </h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">La casa en el árbol.
+                    </button></li>
+                    <li><button onclick="victoria('p2')">La tenebrosa casa del gran árbol.
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">La casona del árbol</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">La casita en el arbolito.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Cómo se le llama al personaje principal de la acción en una obra literaria o cinematográfica?</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Antagonista.
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Extra.
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Personaje secundario.
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Protagonista.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Cómo se le llama al personaje que se enfrenta con el personaje principal en una obra literaria o cinematográfica?</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Protagonista.
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Extra.
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Antagonista.
+                    </button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Personaje secundario.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Los siguientes son verbos en infinitivo, excepto:</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Caminar
+                    </button></li>
+                    <li><button onclick="victoria('p5')">Ayer.
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Correr.</button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Recortar</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. Es un enunciado que podría ser parte de un instructivo:</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Come frutas y verduras.
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Considere saludar a sus amigos.
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Hay animales que se alimentan de pasto</button></li>
+                    <li><button onclick="victoria('p6')">Lanzar las fichas dentro del circulo.
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7.Los adjetivos y adverbios sirven en los instructivos para:</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Precisar las indicaciones.
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Que se vea bonito el instructivo
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Confundir las reglas</button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Evitar el uso de imágenes.
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Son las principales características de los relatos históricos, excepto: </h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Narran un hecho a partir de sucesos reales.
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Cuentan lo sucedido en orden
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Tienen inicio, desarrollo y cierre.
+                    </button></li>
+                    <li><button onclick="victoria('p8')">No incluyen bibliografía</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿CPara escribir el relato histórico anterior, ¿cuál de las siguientes puede ser considerada una fuente primaria de información?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Diarios y crónicas de aquella época.
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Un programa histórico de televisión.
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Libro de Historia de México
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Resumen de Wikipedia
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Elige los adverbios de tiempo.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Aquí, ahí, allí, acá, allá, encima.
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Rápido, lento, deprisa, amablemente.
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Hoy, ayer, mañana, entonces, antes
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Más, menos, poco, demasiado.
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>
